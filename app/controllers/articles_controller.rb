@@ -11,6 +11,6 @@ class ArticlesController < ApplicationController
   end
 
   def show
-
+    @current_article = Article.find(params[:id])
   end
 end
